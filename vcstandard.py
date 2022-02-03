@@ -53,7 +53,3 @@ def decode_text(file,k):
         plain = plain + decode_char(char, key[i])
         i = i + 1
     return plain.upper()
-
-#fileplain = open('plaintext.txt','r+').read()
-
-#print(encode_text(fileplain,'reza'))

@@ -157,10 +157,3 @@ def decode_text(text,keyblock):
         plaintext = plaintext + decode_char_cipher(ciphertext[i]+ciphertext[i+1],keyblock)
     plaintext = plaintext.replace("x",'')
     return plaintext.upper()
-
-keyblock = create_key("JALAN GANESHA SEPULUH")
-
-fileplaintext = open('ciphertext.txt','r')
-plaintext = fileplaintext.read()
-
-print(decode_text(plaintext,keyblock))
